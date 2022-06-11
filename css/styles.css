@@ -13,7 +13,7 @@ body {
 }
 
 .container {
-    align-content: center;
+    justify-content: center;
     width: 1200px;
 }
 
@@ -30,7 +30,7 @@ ul {
 h1,
 h3,
 h4,
-p, {
+p {
     margin: 0;
 }
 
@@ -68,6 +68,7 @@ button {
 }
 
 .nav-container {
+    width: 532px;
     display: flex;
     flex-direction: row
 }
@@ -75,7 +76,9 @@ button {
 .nav-panel {
     padding: 5px;
     display: flex;
-    flex-direction: row}
+    flex-direction: row;
+    justify-content:space-between;
+}
 
 #current { 
     color: var(--brand-color);
@@ -138,7 +141,7 @@ button {
     font-size: 44px;
     line-height: 116%;
     text-align: center;
-    margin: 25px; /* мои изменения +7*/
+    margin: 25px;
     padding-top: 200px;
 }
 
@@ -162,8 +165,7 @@ button {
 
 .preferences,
 .team,
-.whatwedo,
-.section-btn {
+.whatwedo {
     padding-bottom: var(--set-gap94);
 }
 
@@ -173,6 +175,9 @@ button {
     padding-top: var(--set-gap94);
 }
 
+.section-btn {
+    padding-bottom: 34px;
+}
 .preferences h3 {
     color: var(--text-color-primary);
     font-weight: 700;
@@ -190,10 +195,16 @@ button {
     line-height: 146%;
 }
 
-.prefer {
+.prefer-list {
     display: flex;
     flex-direction: row;
-}
+    width: 1170px;
+    justify-content: space-around;}
+
+.prefer-list-item {
+    width: 270px;
+}    
+
     /*whatwedo section */
 .whatwedo h2,
 .team h2 {
@@ -208,29 +219,26 @@ button {
 .whatwedo-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-}
-
-.whatwedo-item {
-    padding: 30px;
-}
+    width: 1170px;
+    justify-content: space-around}
 
 .team {
     background-color: #F5F4FA;
+    width: 1600px;
 }
 
 .team-list {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    width: 1170px;
+    justify-content: space-around;
 }
 
 .team-card {
-    background-color: var(--main-color);
-    width: 270px;
-    height: 368px;
+    background-color: #F5F4FA;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
 }
 
 .team h4,
@@ -256,9 +264,10 @@ button {
 #footer {
     background-color: #2F303A;
     width: 1400px;
+    margin-top: 92px;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 215px;
+    padding-left: 115px;
 }
 
 .logo-footer {
@@ -290,22 +299,21 @@ button {
     color: var(--main-color);
 }
 
-.hidden {
-    display: none;
+.main-section {
+    width: 1170px;
+
 }
 
 .btn-list {
     display: flex; 
     flex-direction: row;
-    margin-bottom: 94px;
-    margin-left: 320px;
+    justify-content: center;
 }
 
 .button {
     background-color: #F5F4FA;
     color: var(--text-color-primary);
-    width: fit-content;
-    padding: 6px 22px;
+    padding: 6px 12px;
     margin: 8px;
     border-radius: 4px;
 }
@@ -319,13 +327,13 @@ button {
 .products-list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .products {
     width: 370px;
-    height: 404px;
     background-color: var(--main-color);
-    margin: 30px;
 }
 
 .product-desc {
