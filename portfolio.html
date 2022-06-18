@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="device-width, initial-scale=1.0">
@@ -10,21 +9,19 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <title>Студия WebStudio</title>
+    <title>Портфолио 03</title>
 </head>
 
 <body class="container">
     <!--header container-->
-    <header class="header-container">
-        <!--КАЖДЫЙ КЛАСС head-container в хедере работатет для двух блоков-->
+    <header class="header container nav">
         <nav class="nav-container">
             <a class="logo" href="index.html"><span class="logo-brand">Web</span>Studio</a>
             <ul class="nav-panel">
-                <li><a class="nav-link" id="current" href="./index.html">Студия</a></li>
-                <li><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
-                <li><a class="nav-link" href="#footer">Контакты</a></li>
+                <li class="nav-item"><a class="nav-link" id="current" href="./index.html">Студия</a></li>
+                <li class="nav-item"><a class="nav-link" href="./portfolio.html">Портфолио</a></li>
+                <li class="nav-item"><a class="nav-link" href="#footer">Контакты</a></li>
             </ul>
-
         </nav>
         <ul class="contacts-container">
             <li class="nav-contacts"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
@@ -35,7 +32,10 @@
         <!--main-section-->    
         <section class="main-section">
                 <!--buttons-->
-            <section class="section-btn">
+            <section class="section section-btn">
+                <h1 class="hidden">
+                    Что мы делаем.
+                </h1>
                 <ul class="btn-list">
                     <li>
                         <button type="button" class="button"  id="current2" >Все</button>
@@ -55,7 +55,7 @@
                 </ul>
             </section>                    
                 <!--products-->
-            <section class="section-products">
+            <section>
                 <ul class="products-list">
                     <li class="products">
                         <img src="./imges/portfolio1.jpg" alt="Технокряк" >
@@ -159,3 +159,4 @@
     </footer>
 </body>
 </html>
+<!--сверено с 02 от 1206-->
